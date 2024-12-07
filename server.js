@@ -5,7 +5,7 @@ const app = express();
 // Sirve los archivos estáticos desde la carpeta 'build'
 app.use(express.static(path.join(__dirname, 'build')));
 
-// Maneja todas las rutas hacia index.html
+// Maneja todas las rutas hacia index.html s
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
