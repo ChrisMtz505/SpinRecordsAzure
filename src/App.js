@@ -174,31 +174,30 @@ function App() {
   style={{ transition: 'color 0.3s', color: '#f8f9fa', background: 'none', border: 'none', cursor: 'pointer' }}
   onMouseOver={(e) => e.currentTarget.style.color = '#1877f2'}
   onMouseOut={(e) => e.currentTarget.style.color = '#f8f9fa'}
-  aria-label="Facebook"
+  onClick={() => window.open('https://facebook.com', '_blank')}
 >
   <FaFacebook size={24} />
 </button>
-
 <button
   className="text-light me-3"
   style={{ transition: 'color 0.3s', color: '#f8f9fa', background: 'none', border: 'none', cursor: 'pointer' }}
   onMouseOver={(e) => e.currentTarget.style.color = '#1da1f2'}
   onMouseOut={(e) => e.currentTarget.style.color = '#f8f9fa'}
-  aria-label="Twitter"
+  onClick={() => window.open('https://twitter.com', '_blank')}
 >
   <FaTwitter size={24} />
 </button>
-
 <button
   className="text-light"
   style={{ transition: 'color 0.3s', color: '#f8f9fa', background: 'none', border: 'none', cursor: 'pointer' }}
   onMouseOver={(e) => e.currentTarget.style.color = '#c13584'}
   onMouseOut={(e) => e.currentTarget.style.color = '#f8f9fa'}
-  aria-label="Instagram"
+  onClick={() => window.open('https://instagram.com', '_blank')}
 >
   <FaInstagram size={24} />
 </button>
 
+                </a>
               </div>
             </div>
           </div>
