@@ -169,15 +169,36 @@ function App() {
               <p className="mb-1">© 2024 Spin Records. Todos los derechos reservados.</p>
               <p>Síguenos en nuestras redes sociales:</p>
               <div>
-                <a href="#" className="text-light me-3" style={{ transition: 'color 0.3s', color: '#f8f9fa' }} onMouseOver={(e) => e.currentTarget.style.color = '#1877f2'} onMouseOut={(e) => e.currentTarget.style.color = '#f8f9fa'}>
-                  <FaFacebook size={24} />
-                </a>
-                <a href="#" className="text-light me-3" style={{ transition: 'color 0.3s', color: '#f8f9fa' }} onMouseOver={(e) => e.currentTarget.style.color = '#1da1f2'} onMouseOut={(e) => e.currentTarget.style.color = '#f8f9fa'}>
-                  <FaTwitter size={24} />
-                </a>
-                <a href="#" className="text-light" style={{ transition: 'color 0.3s', color: '#f8f9fa' }} onMouseOver={(e) => e.currentTarget.style.color = '#c13584'} onMouseOut={(e) => e.currentTarget.style.color = '#f8f9fa'}>
-                  <FaInstagram size={24} />
-                </a>
+              <button
+  className="text-light me-3"
+  style={{ transition: 'color 0.3s', color: '#f8f9fa', background: 'none', border: 'none', cursor: 'pointer' }}
+  onMouseOver={(e) => e.currentTarget.style.color = '#1877f2'}
+  onMouseOut={(e) => e.currentTarget.style.color = '#f8f9fa'}
+  aria-label="Facebook"
+>
+  <FaFacebook size={24} />
+</button>
+
+<button
+  className="text-light me-3"
+  style={{ transition: 'color 0.3s', color: '#f8f9fa', background: 'none', border: 'none', cursor: 'pointer' }}
+  onMouseOver={(e) => e.currentTarget.style.color = '#1da1f2'}
+  onMouseOut={(e) => e.currentTarget.style.color = '#f8f9fa'}
+  aria-label="Twitter"
+>
+  <FaTwitter size={24} />
+</button>
+
+<button
+  className="text-light"
+  style={{ transition: 'color 0.3s', color: '#f8f9fa', background: 'none', border: 'none', cursor: 'pointer' }}
+  onMouseOver={(e) => e.currentTarget.style.color = '#c13584'}
+  onMouseOut={(e) => e.currentTarget.style.color = '#f8f9fa'}
+  aria-label="Instagram"
+>
+  <FaInstagram size={24} />
+</button>
+
               </div>
             </div>
           </div>
